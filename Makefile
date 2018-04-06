@@ -2,10 +2,25 @@ CC=g++
 CFLAGS=-c -Wall -g
 LDFLAGS= -g
 SOURCES= \
-        main.cpp \
-				salinaa.cpp \
-				lab.cpp
-
+    main.cpp \
+	ivanovii.cpp \
+	zhalninrv.cpp \
+	scherbakovdv.cpp \
+	polyakovda.cpp \
+	grishaevaoov.cpp \
+	bagapovar.cpp \
+	tarasovams.cpp \
+	syusinaev.cpp\
+	fedyanovaam.cpp \
+	serguninaes.cpp \
+	borisovrs.cpp \
+	kuznetsovais.cpp\
+	nefedovms.cpp \
+	grishaevaoov.cpp \
+	bulychevaoa.cpp \
+	salinaa.cpp \
+	mescheryakovam.cpp \
+	lab.cpp
 
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=vvm

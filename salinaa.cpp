@@ -14,10 +14,9 @@ std::cout<<"Hello world";
  */
 void salinaa::lab2()
 {
-double *x, max;
+double max;
 	int k, index;
 	const double eps = 0.00001;
-	x = new double[N];
 	k = 0;
 	while (k < N)
 	{
@@ -38,7 +37,7 @@ double *x, max;
 			// нет ненулевых диагональных элементов
 			cout << "Решение получить невозможно из-за нулевого столбца ";
 			cout << index << " матрицы A" << endl;
-			return 0;
+			return;
 		}
 		for (int j = 0; j < N; j++)
 		{
@@ -69,7 +68,6 @@ double *x, max;
 		for (int i = 0; i < k; i++)
 			b[i] = b[i] - A[i][k] * x[k];
 	}
-	return x;
 }
 
 
@@ -79,8 +77,6 @@ double *x, max;
  */
 void salinaa::lab3()
 {
-double *x;
-	x = new double[N];
 	int N1=N-1;
 	double *alfa = new double[N];
 	double *beta = new double[N];
@@ -97,7 +93,6 @@ double *x;
 	for (int i = N1-1; i >= 0; i--) {
 		x[i] = alfa[i] * x[i + 1] + beta[i];
 	}
-	return x;
 }
 
 
@@ -142,6 +137,12 @@ void salinaa::lab7()
 
 
 void salinaa::lab8()
+{
+
+}
+
+
+void salinaa::lab9()
 {
 
 }
